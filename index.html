@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple CRM</title>
+</head>
+<body>
+  <h1>My CRM</h1>
+
+  <!-- Auth UI -->
+  <div id="auth-container">
+    <input id="email"    type="email"    placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="btn-login">Log In</button>
+    <button id="btn-signup">Sign Up</button>
+  </div>
+
+  <!-- CRM UI (hidden until logged in) -->
+  <div id="crm-container" style="display:none;">
+    <h2>Contacts</h2>
+    <ul id="contacts-list"></ul>
+
+    <h3>Add Contact</h3>
+    <input id="first-name" placeholder="First name" />
+    <input id="last-name"  placeholder="Last name" />
+    <button id="btn-add">Add</button>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
